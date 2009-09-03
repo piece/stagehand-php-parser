@@ -31,7 +31,7 @@ $releaseVersion = '0.1.0';
 $releaseStability = 'beta';
 $apiVersion = '0.1.0';
 $apiStability = 'beta';
-$notes = 'The initial release of Stagehand_PHP_Parser.';
+$notes = 'The first release of Stagehand_PHP_Parser.';
  
 $package = new PEAR_PackageFileManager2();
 $package->setOptions(array('filelistgenerator' => 'file',
@@ -44,13 +44,13 @@ $package->setOptions(array('filelistgenerator' => 'file',
                                                 'doc' => 'doc',
                                                 'src' => 'php',
                                                 'tests' => 'test'),
-                           'ignore' => array('package.php', 'data/'))
+                           'ignore' => array('package.php', 'data/', 'scripts/'))
                      );
  
 $package->setPackage('Stagehand_PHP_Parser');
 $package->setPackageType('php');
-$package->setSummary('A class for parsing PHP script.');
-$package->setDescription('A class for parsing PHP script.');
+$package->setSummary('A PHP code parser in pure PHP');
+$package->setDescription('Stagehand_PHP_Parser provides features of parses PHP codes.');
 $package->setChannel('pear.piece-framework.com');
 $package->setLicense('Zend License', 'http://www.zend.com/license/2_00.txt');
 $package->setAPIVersion($apiVersion);
