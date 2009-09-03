@@ -14,7 +14,7 @@
   <active>yes</active>
  </lead>
  <date>2009-09-03</date>
- <time>17:26:22</time>
+ <time>18:00:30</time>
  <version>
   <release>0.1.0</release>
   <api>0.1.0</api>
@@ -29,6 +29,11 @@ The first release of Stagehand_PHP_Parser.
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
+   <dir name="doc">
+    <file name="LICENSE" role="doc">
+     <tasks:replace from="@package_version@" to="version" type="package-info" />
+    </file>
+   </dir> <!-- /doc -->
    <dir name="src">
     <dir name="Stagehand">
      <dir name="PHP">
@@ -42,7 +47,7 @@ The first release of Stagehand_PHP_Parser.
        <file name="YYToken.php" role="php">
         <tasks:replace from="@package_version@" to="version" type="package-info" />
        </file>
-      </dir> <!-- //src/Stagehand/PHP/Parser -->
+      </dir> <!-- /src/Stagehand/PHP/Parser -->
       <file name="kmyacc.class.php.parser" role="php">
        <tasks:replace from="@package_version@" to="version" type="package-info" />
       </file>
@@ -55,9 +60,9 @@ The first release of Stagehand_PHP_Parser.
       <file name="zend_language_parser.y" role="php">
        <tasks:replace from="@package_version@" to="version" type="package-info" />
       </file>
-     </dir> <!-- //src/Stagehand/PHP -->
-    </dir> <!-- //src/Stagehand -->
-   </dir> <!-- //src -->
+     </dir> <!-- /src/Stagehand/PHP -->
+    </dir> <!-- /src/Stagehand -->
+   </dir> <!-- /src -->
   </dir> <!-- / -->
  </contents>
  <dependencies>
